@@ -11,33 +11,32 @@
 			rel="stylesheet"
 			href="./dist/output.css"
 		/>
-      <script src="https://kit.fontawesome.com/2c2ad9e412.js" crossorigin="anonymous"></script>
+		<script
+			src="https://kit.fontawesome.com/2c2ad9e412.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body class="overflow-x-hidden">
-      <!-- navbar -->
+		<!-- navbar -->
 		<div
-			class="navbar fixed top-0 w-full bg-kafka-1 px-4 py-4"
+			class="navbar fixed top-0 z-10 w-full bg-kafka-1 px-4 py-4"
 			style="position: fixed"
 		>
-			<h1
-				class="navbar-title text-center font-poppins text-3xl font-bold text-white"
-			>
-				Kafka.
-			</h1>
+			<p class="m-auto font-poppins text-3xl font-bold text-white">Kafka.</p>
 		</div>
 
-      <!-- konten utama -->
+		<!-- konten utama -->
 		<div
 			class="main relative flex h-screen w-full flex-col items-center justify-center"
 		>
-			<p class="mb-10 font-poppins text-2xl text-kafka-1 text-center w-3/4">
+			<p class="mb-10 w-3/4 text-center font-poppins text-2xl text-kafka-1">
 				sudahi stress mu, mari mengkuru kuru bersama
 			</p>
 			<div class="count my-20 font-poppins text-5xl font-semibold text-kafka-1">
 				0
 			</div>
 			<button
-				class="click rounded bg-kafka-1 px-20 py-3 font-poppins text-2xl text-white hover:bg-kafka-2"
+				class="click rounded bg-kafka-1 px-20 py-4 font-poppins text-2xl text-white shadow-md hover:bg-kafka-2"
 			>
 				kuru - kuru
 			</button>
@@ -60,28 +59,38 @@
 			/>
 		</div>
 
-      <!-- footer -->
-      <div class="footer w-full h-auto px-16 py-5 bg-kafka-1 flex justify-between flex-col sm:flex-row">
-         <div class="author">
-            <h1 class="author text-gray-200 font-poppins font-semibold">Made by:</h1>
-            <p class="text-gray-300 font-poppins">Ramadina Al Muzthazam</p>
-         </div>
+		<!-- footer -->
+		<div
+			class="footer flex h-auto w-full flex-col justify-between bg-kafka-1 px-16 py-5 sm:flex-row"
+		>
+			<div class="author">
+				<h1 class="author font-poppins font-semibold text-gray-200">
+					Made by:
+				</h1>
+				<p class="font-poppins text-gray-300">Ramadina Al Muzthazam</p>
+			</div>
 
-         <div class="asli sm:text-center my-3 sm:my-0">
-            <h1 class="text-gray-200 font-poppins font-semibold">Oirginal:</h1>
-            <p class="text-gray-300 font-poppins">@caliphdev</p>
-         </div>
-         <div class="sosmed flex flex-col text-gray-300 font-poppins">
-            <a class="github flex items-center" href="https://github.com/ramarfx">
-               <i class="fa-brands fa-github"></i>&nbsp;
-               <p>ramarfx</p>
-            </a>
-            <a class="facebook flex items-center " href="https://www.facebook.com/ramadina.almuthazam/">
-               <i class="fa-brands fa-facebook"></i>&nbsp;
-               <p>Ramadina Almuthazam</p>
-            </a>
-         </div>
-      </div>
+			<div class="asli my-3 sm:my-0 sm:text-center">
+				<h1 class="font-poppins font-semibold text-gray-200">Original:</h1>
+				<p class="font-poppins text-gray-300">@caliphdev</p>
+			</div>
+			<div class="sosmed flex flex-col font-poppins text-gray-300">
+				<a
+					class="github flex items-center"
+					href="https://github.com/ramarfx"
+				>
+					<i class="fa-brands fa-github"></i>&nbsp;
+					<p>ramarfx</p>
+				</a>
+				<a
+					class="facebook flex items-center"
+					href="https://www.facebook.com/ramadina.almuthazam/"
+				>
+					<i class="fa-brands fa-facebook"></i>&nbsp;
+					<p>Ramadina Almuthazam</p>
+				</a>
+			</div>
+		</div>
 		<script src="./src/script.js"></script>
 	</body>
 </html>
