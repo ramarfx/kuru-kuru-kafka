@@ -26,7 +26,7 @@ function animasiKafka() {
 
 	let random = Math.floor(Math.random() * 2) + 1;
 	let elem = document.createElement('img');
-	elem.src = `./asset/kafka${random}.gif`;
+	elem.src = `./src/asset/kafka${random}.gif`;
 	elem.style.position = 'absolute';
 	elem.style.width = '300px';
 	elem.style.right = '-510px';
