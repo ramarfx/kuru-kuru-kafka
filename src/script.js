@@ -1,23 +1,34 @@
 let angka = document.querySelector('.count');
-const tombol = document.querySelector('.click');
 const audio = document.getElementById('audio');
 let angkaCount = 0;
 
-tombol.addEventListener('click', () => {
+function clickFungsi() {
 	angkaCount++;
-	angka.innerHTML = angkaCount;
+	angka.innerText = angkaCount;
 
 	audioPlay();
-	animasiKafka()
-});
+	animasiKafka();
+}
+
+const audioList = [
+	new Audio('src/asset/audio1.mp3'),
+	new Audio('src/asset/audio2.mp3'),
+];
+
+for (const audio of audioList) {
+	audio.preload = 'auto';
+}
 
 function audioPlay() {
-	audio.play();
+	let audio;
+	let random = Math.floor(Math.random() * 2);
 
-	audio.addEventListener('ended', () => {
-		audio.currentTime = 0;
-		audio.play();
-	});
+	audio = audioList[random]
+
+	audio.play();
+	audio.addEventListener("ended", function () {
+		this.remove();
+  });
 }
 
 function animasiKafka() {
